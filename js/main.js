@@ -16,6 +16,8 @@
             contents.forEach(content => {
                 content.classList.remove('active');
             });
+
+            document.getElementById(clickItem.dataset.id).classList.add('active');
         });
     });
 }
