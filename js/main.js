@@ -3,11 +3,14 @@
 {
     const menuItems = document.querySelectorAll('.menu li a');
 
-    menuItems.forEach(item => {
-        item.addEventListener('click', e => {
+    menuItems.forEach(clickItem => {
+        clickItem.addEventListener('click', e => {
             e.preventDefault();
 
-            item.classList.add('active');
+            menuItems.forEach(item => {
+                item.classList.remove('active');
+            });
+            clickItem.classList.add('active');
         });
     });
 }
