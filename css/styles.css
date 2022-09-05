@@ -27,7 +27,13 @@ body {
     background: #333;
     color: #fff;
 }
+
 .content.active {
     background: #333;
     color: #fff;
+    display: block;
+}
+
+.content {
+    display: none;
 }
