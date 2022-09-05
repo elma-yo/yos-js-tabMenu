@@ -14,3 +14,7 @@ body {
     display: flex;
 }
 
+.menu li a {
+    display: inline-block;
+    width: 100px;
+}
