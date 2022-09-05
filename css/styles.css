@@ -22,3 +22,12 @@ body {
     color: #333;
     text-decoration: none;
 }
+
+.menu li a.active {
+    background: #333;
+    color: #fff;
+}
+.content.active {
+    background: #333;
+    color: #fff;
+}
