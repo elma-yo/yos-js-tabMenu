@@ -2,7 +2,8 @@
 
 {
     const menuItems = document.querySelectorAll('.menu li a');
-
+    const contents = document.querySelectorAll('.content');
+    
     menuItems.forEach(clickItem => {
         clickItem.addEventListener('click', e => {
             e.preventDefault();
@@ -11,6 +12,10 @@
                 item.classList.remove('active');
             });
             clickItem.classList.add('active');
+
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
         });
     });
 }
